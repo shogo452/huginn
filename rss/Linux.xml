@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - Linux</title><description>Linuxに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>Waylandメインにして半月が経った</title><link>https://qiita.com/jidaikobo-shibata/items/379ed75bbf8a69827188?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/jidaikobo-shibata/items/379ed75bbf8a69827188?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>数年間X11（Xorg）を使い続けてきましたが、Ubuntu自体がWaylandへ軸足を移しつつあることもあり、思い切ってメイン環境をWaylandに切り替えてみました。
+この記事は、「Waylandにして半月ほど使ってみた体験メモ」です。
+
+Waylandで変わったもの
+...</description><pubDate>Wed, 28 Jan 2026 12:10:42 GMT</pubDate><category>Linux</category></item></channel></rss>

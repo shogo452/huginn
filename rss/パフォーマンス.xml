@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - パフォーマンス</title><description>パフォーマンスに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>「Claude Code Opus 4.5」が劣化している</title><link>https://gigazine.net/news/20260130-claude-code-opus-performance/</link><guid isPermaLink="true">https://gigazine.net/news/20260130-claude-code-opus-performance/</guid><description>OpenAIやAnthropicなどの企業が提供するAIには変更が随時適用されており、同じ名前のAIモデルでも性能や出力傾向が変化することがあります。AIの性能測定を行っているMarginlabの追跡調査によってClaude Code Opus 4.5の性能が劣化していることが確認されました。 Claude Code Opus 4.5 Performance Tracker | Marginlab</description><pubDate>Fri, 30 Jan 2026 06:25:46 GMT</pubDate><category>パフォーマンス</category><category>ChatGPT</category><category>Claude</category></item><item><title>PostgreSQL実践入門 | 技術評論社</title><link>https://gihyo.jp/book/2026/978-4-297-14861-4</link><guid isPermaLink="true">https://gihyo.jp/book/2026/978-4-297-14861-4</guid><description>概要 本書は、PostgreSQLの基本概念から安定稼働・パフォーマンスチューニング、そして現場で役立つ機能までを網羅した、実践的な解説書です。基礎的な解説からはじめ、PostgreSQLの内部構造、テーブル設計、レプリケーション、認証、バックアップ、リストア、モニタリングなどPostgreSQLを現場で利用するための知識を体...</description><pubDate>Thu, 29 Jan 2026 23:03:34 GMT</pubDate><category>セキュリティ</category><category>パフォーマンス</category><category>データベース</category></item><item><title>開発者が知っておくべきPostgreSQLパフォーマンス改善Tips 入門10選</title><link>https://zenn.dev/gizmo/articles/f61b3e999a5137</link><guid isPermaLink="true">https://zenn.dev/gizmo/articles/f61b3e999a5137</guid><description>更新（2026年1月30日）
+
+入門編の次の初級編はこちら
+
+https://zenn.dev/gizmo/articles/5a3b81b56309c6
+
+ 対象読者
+
+最近になってAIコーディングをはじめたひと
+経験2年未満レベルのジュニアエンジニア
+ほか、そのへんのレベル感の方向け
+
+
+ はじめに
+「開発環境では爆速だったのに、本番データが入った途端にタイムアウトする」
+そんな「時限爆弾」を</description><pubDate>Tue, 27 Jan 2026 23:00:26 GMT</pubDate><category>パフォーマンス</category><category>データベース</category></item><item><title>GitHub Actionsにおけるrunnerのパフォーマンス比較(Disk I/O編) - 2026年GitHub Actions料金改定を見据えた最適解を添えて -</title><link>https://developer.hatenastaff.com/entry/2025/12/22/123543</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/12/22/123543</guid><description>システムプラットフォームチームの id:rskmm0chang です。
+この記事は、はてなエンジニア Advent Calendar 2025の22日目の記事であり、はてなのSREが毎月交代で書いているSRE連載の2025年12月号です。
+また、下記の記事(SRE連載の2025年11月号)の続編の内容となります。
+developer.hatenastaff.com
+そのため、パフォーマンス比較を始</description><pubDate>Mon, 22 Dec 2025 03:35:43 GMT</pubDate><category>SRE</category><category>CI-CD</category><category>パフォーマンス</category></item><item><title>GitHub ActionsにおけるGitHub-hosted runnerとSelf-hosted runnerのパフォーマンス比較(CPU編)</title><link>https://developer.hatenastaff.com/entry/2025/11/27/123119</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/11/27/123119</guid><description>システムプラットフォームチームの id:rskmm0chang です。
+この記事は、はてなのSREが毎月交代で書いているSRE連載の2025年11月号です。10月の記事はid:cohalzさんの
+GitHub Organizationを安心して利用するための最近の機能紹介でした。
+前回も11月に書いていて、11月になるとブログが書きたくなるようです。
+developer.hatenastaff.c</description><pubDate>Thu, 27 Nov 2025 03:31:19 GMT</pubDate><category>SRE</category><category>ログ</category><category>CI-CD</category><category>パフォーマンス</category></item></channel></rss>

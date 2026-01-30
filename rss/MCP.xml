@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - MCP</title><description>MCPに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>Figma x Claudeでフルでコーディングしてみた</title><link>https://zenn.dev/hamworks/articles/0d57ca09e695c5</link><guid isPermaLink="true">https://zenn.dev/hamworks/articles/0d57ca09e695c5</guid><description>自分ではメインで手を動かさず、ClaudeにHTMLコーディングをほぼ任せました。
+地味にFigma MCPを初めて使ったので、いい感じの進め方ないかなーって試行錯誤した記録を残しておきます。
+今回はReactとかじゃなく、HTML（Nunjucksを用いたtwig）を作成しています。
+コーディングルール等はルールで定義します。CLAUDE.mdにばーっと全部書いてからルールにわけてって頼むと、い</description><pubDate>Thu, 29 Jan 2026 02:56:51 GMT</pubDate><category>Claude</category><category>MCP</category></item><item><title>JAXAが公開したMCPサーバーを触ってみる</title><link>https://zenn.dev/ra0kley/articles/cb2fc726f167da</link><guid isPermaLink="true">https://zenn.dev/ra0kley/articles/cb2fc726f167da</guid><description>JAXA第一宇宙技術部門のX(旧Twitter)アカウントから地球観測データを生成AIから呼び出せるようになったという投稿がありました。
+
+公式ドキュメントを見ると、ローカルMCPサーバーを公開しているようです。
+公式ドキュメントではpipを用いて環境を構築していますが、多くのMCPサーバーはuvで環境を構築している印象が個人的にあるため、この記事ではuvで動かしていきたいと思います。
+※ 個人的</description><pubDate>Tue, 27 Jan 2026 22:42:01 GMT</pubDate><category>生成AI</category><category>MCP</category></item></channel></rss>

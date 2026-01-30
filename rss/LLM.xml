@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - LLM</title><description>LLMに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>🦞Moltbot🦞をパーソナルアシスタントとして使い倒す基盤設計</title><link>https://zenn.dev/kndoshn/articles/57b5033bbf155b</link><guid isPermaLink="true">https://zenn.dev/kndoshn/articles/57b5033bbf155b</guid><description>Moltbot (LLM) をパーソナルアシスタントとして活用する場合の弱点
+Moltbotには MEMORY.md（長期記憶）や HEARTBEAT.md（定期チェック）といったマークダウンベースの仕組みが用意されています。しかし運用を続けるうちに根本的な問題に直面しました。
+問題：AIエージェントは「忘れる」
+
+「明日リマインドして」→ セッションが切れたら忘れる
+「毎朝ニュースをチェックして</description><pubDate>Wed, 28 Jan 2026 13:06:07 GMT</pubDate><category>LLM</category><category>エージェント</category></item><item><title>Hatena Engineer Seminar  #36「プロダクトを支えるAI編」をオンラインで開催しました #hatenatech</title><link>https://developer.hatenastaff.com/entry/engineer-seminar-36-report</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/engineer-seminar-36-report</guid><description>2026年1月22日（木）に、 Hatena Engineer Seminar #36 をオンライン開催しました。ご参加いただいたみなさま、ありがとうございました。
+このエントリーでは、当日のアーカイブ動画や公開資料をご紹介します。
+Hatena Engineer Seminar #36 について
+発表概要と資料
+LLMを「機能」として組み込む技術：「Figma to はてなCMS」におけるプロン</description><pubDate>Fri, 23 Jan 2026 06:00:00 GMT</pubDate><category>LLM</category></item></channel></rss>

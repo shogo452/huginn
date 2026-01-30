@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - CI-CD</title><description>CI-CDに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>GitHub Actionsにおけるrunnerのパフォーマンス比較(Disk I/O編) - 2026年GitHub Actions料金改定を見据えた最適解を添えて -</title><link>https://developer.hatenastaff.com/entry/2025/12/22/123543</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/12/22/123543</guid><description>システムプラットフォームチームの id:rskmm0chang です。
+この記事は、はてなエンジニア Advent Calendar 2025の22日目の記事であり、はてなのSREが毎月交代で書いているSRE連載の2025年12月号です。
+また、下記の記事(SRE連載の2025年11月号)の続編の内容となります。
+developer.hatenastaff.com
+そのため、パフォーマンス比較を始</description><pubDate>Mon, 22 Dec 2025 03:35:43 GMT</pubDate><category>SRE</category><category>CI-CD</category><category>パフォーマンス</category></item><item><title>GitHub ActionsにおけるGitHub-hosted runnerとSelf-hosted runnerのパフォーマンス比較(CPU編)</title><link>https://developer.hatenastaff.com/entry/2025/11/27/123119</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/11/27/123119</guid><description>システムプラットフォームチームの id:rskmm0chang です。
+この記事は、はてなのSREが毎月交代で書いているSRE連載の2025年11月号です。10月の記事はid:cohalzさんの
+GitHub Organizationを安心して利用するための最近の機能紹介でした。
+前回も11月に書いていて、11月になるとブログが書きたくなるようです。
+developer.hatenastaff.c</description><pubDate>Thu, 27 Nov 2025 03:31:19 GMT</pubDate><category>SRE</category><category>ログ</category><category>CI-CD</category><category>パフォーマンス</category></item></channel></rss>

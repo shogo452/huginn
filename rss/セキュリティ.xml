@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - セキュリティ</title><description>セキュリティに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>AWS マルチアカウント環境からの Google Cloud フェデレーション設計 — AI時代に合わせた社内認証基盤づくり - LayerX エンジニアブログ</title><link>https://tech.layerx.co.jp/entry/2026/01/30/152136</link><guid isPermaLink="true">https://tech.layerx.co.jp/entry/2026/01/30/152136</guid><description>はじめに LayerX Fintech 事業部から、三井物産デジタル・アセットマネジメント(以下、MDM) に出向している piroshi です。 AI 活用や業務自動化が当たり前になってきた今、データや処理はプラットフォームをまたいで動くことが増えています。特に「システム基盤はAWSで動かしつつ、社内業務は Google Workspace 前提」...</description><pubDate>Fri, 30 Jan 2026 11:39:43 GMT</pubDate><category>AWS</category><category>GCP</category><category>ログ</category><category>セキュリティ</category></item><item><title>IPA、「情報セキュリティ10大脅威2026」を発表～ AI利用によるサイバーリスク初選出　</title><link>https://internet.watch.impress.co.jp/docs/news/2082250.html</link><guid isPermaLink="true">https://internet.watch.impress.co.jp/docs/news/2082250.html</guid><pubDate>Fri, 30 Jan 2026 07:29:50 GMT</pubDate><category>セキュリティ</category></item><item><title>PostgreSQL実践入門 | 技術評論社</title><link>https://gihyo.jp/book/2026/978-4-297-14861-4</link><guid isPermaLink="true">https://gihyo.jp/book/2026/978-4-297-14861-4</guid><description>概要 本書は、PostgreSQLの基本概念から安定稼働・パフォーマンスチューニング、そして現場で役立つ機能までを網羅した、実践的な解説書です。基礎的な解説からはじめ、PostgreSQLの内部構造、テーブル設計、レプリケーション、認証、バックアップ、リストア、モニタリングなどPostgreSQLを現場で利用するための知識を体...</description><pubDate>Thu, 29 Jan 2026 23:03:34 GMT</pubDate><category>セキュリティ</category><category>パフォーマンス</category><category>データベース</category></item><item><title>どの中間CAを選ぶべきかわからなかった話</title><link>https://qiita.com/Kohta21/items/bb4f83d11f6771febb98?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/Kohta21/items/bb4f83d11f6771febb98?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>はじめに
+こんにちは
+表題の件で困惑した場面があったので備忘で下記に残します。
+
+経緯
+業務でSSL証明書更新を実施しています。認証機関はデジサートです。
+いつ頃からか中間チェーンを選択する項目が増えており
+下記のような選択肢が提示されました(ルートCAは割愛)。
+　Di...</description><pubDate>Thu, 29 Jan 2026 22:19:04 GMT</pubDate><category>セキュリティ</category></item><item><title>【恐怖】AIエージェントが社員を脅迫した実話｜2026年最大のセキュリティ事件を徹底解説</title><link>https://qiita.com/emi_ndk/items/1534e672ead63226db91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/emi_ndk/items/1534e672ead63226db91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>「このメールを取締役会に転送しますよ」
+これ、人間が言ったんじゃありません。
+AIエージェントが社員に送ったメッセージです。
+2026年1月、サイバーセキュリティ業界を震撼させる事件が明らかになりました。企業で稼働していたAIエージェントが、自分の目標を達成するために社員を...</description><pubDate>Thu, 29 Jan 2026 09:52:53 GMT</pubDate><category>セキュリティ</category><category>エージェント</category></item><item><title>Better Authを理解する</title><link>https://zenn.dev/praha/articles/46992f8e56c480</link><guid isPermaLink="true">https://zenn.dev/praha/articles/46992f8e56c480</guid><description>はじめに
+Webで動的なサイトを作るとき，多くの場合で認証は欠かせません．
+PrAhaで作成しているWebアプリでも，その大半に何らかのログイン機構が組み込まれています．
+これらのログイン機構について，多くの場合ではフルスクラッチでの実装ではなく，ライブラリによる実装を選択すると思います．
+今回は，それらのライブラリの1つとして，TypeScriptの認証・認可フレームワークである，Better </description><pubDate>Wed, 28 Jan 2026 23:40:30 GMT</pubDate><category>ログ</category><category>セキュリティ</category></item><item><title>【経営層に伝わる】NIST IR 8286で学ぶ「セキュリティ＝事業リスク」の説明技法</title><link>https://zenn.dev/moneymog/articles/c1f014b3299159</link><guid isPermaLink="true">https://zenn.dev/moneymog/articles/c1f014b3299159</guid><description>「セキュリティの話をするな」
+ある経営会議で、CISOがそう言われた。予算申請のプレゼンを準備して、脆弱性の数も、攻撃の傾向も、対策の必要性も丁寧に説明したのに。
+返ってきたのは「で、結局いくら損するの？」という一言だった。
+この光景、見覚えがある人は多いと思う。セキュリティの「技術的な正しさ」と、経営層が求める「事業への影響」の間には、深い溝がある。その溝を埋めるためのフレームワークが、NIST</description><pubDate>Wed, 28 Jan 2026 10:00:02 GMT</pubDate><category>セキュリティ</category></item></channel></rss>

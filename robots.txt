@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shogo452.github.io/huginn/sitemap-index.xml

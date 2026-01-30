@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - AWS</title><description>AWSに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>AWS マルチアカウント環境からの Google Cloud フェデレーション設計 — AI時代に合わせた社内認証基盤づくり - LayerX エンジニアブログ</title><link>https://tech.layerx.co.jp/entry/2026/01/30/152136</link><guid isPermaLink="true">https://tech.layerx.co.jp/entry/2026/01/30/152136</guid><description>はじめに LayerX Fintech 事業部から、三井物産デジタル・アセットマネジメント(以下、MDM) に出向している piroshi です。 AI 活用や業務自動化が当たり前になってきた今、データや処理はプラットフォームをまたいで動くことが増えています。特に「システム基盤はAWSで動かしつつ、社内業務は Google Workspace 前提」...</description><pubDate>Fri, 30 Jan 2026 11:39:43 GMT</pubDate><category>AWS</category><category>GCP</category><category>ログ</category><category>セキュリティ</category></item><item><title>jQueryエンジニアがNext.js 16に挑んだ3日間</title><link>https://qiita.com/gerrard15/items/94709c464e930bdb3b39?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/gerrard15/items/94709c464e930bdb3b39?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>jQueryからNext.jsへ：モダンフロントエンドで挑んだ「S3ファイルダウンロード機能」実装の記録
+これまでJavaScriptやjQueryを中心にフロントエンドを触ってきた方が、最新のモダン開発（Next.jsなど）に触れると、その概念の多さに驚くかもしれません...</description><pubDate>Fri, 30 Jan 2026 07:57:06 GMT</pubDate><category>AWS</category></item><item><title>「GitHub Copilotが高くて払えない」と嘆くあなたへ。AWSの「Amazon Q」なら無料で同じことができます</title><link>https://zenn.dev/miyaco_log/articles/6f084e82688fa1</link><guid isPermaLink="true">https://zenn.dev/miyaco_log/articles/6f084e82688fa1</guid><description>※本ページはプロモーションが含まれています 【この記事でわかること】 Amazon Q Developerは、AWS版の「無料GitHub Copilot」。 VS Codeに入れるだけで、コードの自動生成やチャット相談ができる。 クレジットカード登録不要。必要なのはメールアドレスだけ。 はじめに：月額10ドルの壁 「AIコーディング、便利そうだけ...</description><pubDate>Fri, 30 Jan 2026 04:51:57 GMT</pubDate><category>AWS</category></item><item><title>AWS Community Buildersとしての2025年の活動をまとめてみた</title><link>https://qiita.com/moritalous/items/7ecd3c11de147fce3647?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/moritalous/items/7ecd3c11de147fce3647?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>【関西開催】AWS Community Builders Meetup 2026 Winterで使用するスライドです。
+
+自己紹介
+森田　和明
+AWS Community Builderは2年目です。（2024～2025）
+他には
+
+AWS Ambassador（2...</description><pubDate>Thu, 29 Jan 2026 22:53:14 GMT</pubDate><category>AWS</category></item><item><title>「GitHub Copilotが高くて払えない」と嘆くあなたへ。AWSの「Amazon Q」なら無料で同じことができます</title><link>https://zenn.dev/miyaco_log/articles/6f084e82688fa1</link><guid isPermaLink="true">https://zenn.dev/miyaco_log/articles/6f084e82688fa1</guid><description>※本ページはプロモーションが含まれています
+【この記事でわかること】
+
+Amazon Q Developerは、AWS版の「無料GitHub Copilot」。
+VS Codeに入れるだけで、コードの自動生成やチャット相談ができる。
+クレジットカード登録不要。必要なのはメールアドレスだけ。
+
+
+ はじめに：月額10ドルの壁
+「AIコーディング、便利そうだけど毎月1,500円（$10）はちょっと……</description><pubDate>Wed, 28 Jan 2026 22:29:15 GMT</pubDate><category>AWS</category></item><item><title>EKS + Karpenter で GPUノードを構築した話</title><link>https://developer.hatenastaff.com/entry/2026/01/15/182143</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2026/01/15/182143</guid><description>はじめに
+id:masayosu です。
+この記事は、はてなエンジニア Advent Calendar 2025 2026年1月15日の記事であり、はてなのSREが毎月交代で書いているSRE連載の2026年1月号の記事です。
+本記事では、Amazon EKS + Karpenter を使ってGPUノードを構築した話しと、その中で フラクショナル GPU インスタンス利用時に直面した課題をまとめます</description><pubDate>Thu, 15 Jan 2026 09:21:43 GMT</pubDate><category>SRE</category><category>AWS</category></item><item><title>コンテナ化したVarnish Cache(Vinyl Cache)のメトリックをMackerelで可視化する</title><link>https://developer.hatenastaff.com/entry/2025/12/18/000000</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/12/18/000000</guid><description>こんにちは、Androidアプリケーションエンジニアのid:rokouchaです。
+皆さんはVarnish Cache改めVinyl Cache1（以下Varnish）を使っていますか、コンテナ化していますか、メトリックを取得できていますか？
+オンプレミスなサーバやEC2など仮想マシン上で動かしている時は、サーバーで動いているエージェントでmackerel-plugin-varnishを有効化する</description><pubDate>Wed, 17 Dec 2025 15:00:00 GMT</pubDate><category>Docker</category><category>AWS</category><category>エージェント</category></item></channel></rss>
