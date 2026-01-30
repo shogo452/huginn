@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - ログ</title><description>ログに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>AWS マルチアカウント環境からの Google Cloud フェデレーション設計 — AI時代に合わせた社内認証基盤づくり - LayerX エンジニアブログ</title><link>https://tech.layerx.co.jp/entry/2026/01/30/152136</link><guid isPermaLink="true">https://tech.layerx.co.jp/entry/2026/01/30/152136</guid><description>はじめに LayerX Fintech 事業部から、三井物産デジタル・アセットマネジメント(以下、MDM) に出向している piroshi です。 AI 活用や業務自動化が当たり前になってきた今、データや処理はプラットフォームをまたいで動くことが増えています。特に「システム基盤はAWSで動かしつつ、社内業務は Google Workspace 前提」...</description><pubDate>Fri, 30 Jan 2026 11:39:43 GMT</pubDate><category>AWS</category><category>GCP</category><category>ログ</category><category>セキュリティ</category></item><item><title>グーグル、AI概要への情報利用をサイト側が「拒否」できる機能を検討へ</title><link>https://japan.cnet.com/article/35243371/</link><guid isPermaLink="true">https://japan.cnet.com/article/35243371/</guid><description>Googleは、検索結果のトップに表示されるAI生成の要約機能「AIによる概要」に対し、ウェブサイトの所有者が自社コンテンツの利用を拒否（オプトアウト）できる機能を検討中であると明らかにした。 同社は1月28日付けの公式ブログで、Google検索のAI機能において、コンテンツがどのように表示されるかをサイト側で管理す...</description><pubDate>Fri, 30 Jan 2026 06:44:31 GMT</pubDate><category>ログ</category></item><item><title>Better Authを理解する</title><link>https://zenn.dev/praha/articles/46992f8e56c480</link><guid isPermaLink="true">https://zenn.dev/praha/articles/46992f8e56c480</guid><description>はじめに
+Webで動的なサイトを作るとき，多くの場合で認証は欠かせません．
+PrAhaで作成しているWebアプリでも，その大半に何らかのログイン機構が組み込まれています．
+これらのログイン機構について，多くの場合ではフルスクラッチでの実装ではなく，ライブラリによる実装を選択すると思います．
+今回は，それらのライブラリの1つとして，TypeScriptの認証・認可フレームワークである，Better </description><pubDate>Wed, 28 Jan 2026 23:40:30 GMT</pubDate><category>ログ</category><category>セキュリティ</category></item><item><title>Electronはもう古い？Tauri v2でデスクトップアプリを作ったら最高だった話</title><link>https://zenn.dev/genshi_ai/articles/fa96e541c480d2</link><guid isPermaLink="true">https://zenn.dev/genshi_ai/articles/fa96e541c480d2</guid><description>はじめに
+画像圧縮アプリ、みんな困ってません？
+個人開発やWebサービスを運営していると、画像の圧縮は避けて通れません。ブログに載せる写真、OGP画像、アプリのアセット...。でも、まともな圧縮アプリって意外とないんですよね。
+
+
+TinyPNG → Webアップロードが面倒、枚数制限あり
+
+ImageOptim (Mac) → 古い、Windows版なし
+
+Squoosh → ブラウザ限定、バッ</description><pubDate>Wed, 28 Jan 2026 09:48:22 GMT</pubDate><category>ログ</category></item><item><title>はてなブログのAndroidアプリのスムーズな無限スクロールを支える技術</title><link>https://developer.hatenastaff.com/entry/2025/12/26/000000</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/12/26/000000</guid><description>こんにちは、Androidアプリケーションエンジニアのid:rokouchaです。
+皆さんはリニューアルされたはてなブログのAndroidアプリをもう体験しましたか？まだの方はぜひダウンロードして、生まれ変わったはてなブログアプリを体験してみてください。
+
+今回のリニューアルでは、目的の1つとして「Androidの最新標準技術に追従1」を掲げています。
+スムーズな無限スクロールを実現するためのペー</description><pubDate>Thu, 25 Dec 2025 15:00:00 GMT</pubDate><category>ログ</category></item><item><title>GitHub ActionsにおけるGitHub-hosted runnerとSelf-hosted runnerのパフォーマンス比較(CPU編)</title><link>https://developer.hatenastaff.com/entry/2025/11/27/123119</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/11/27/123119</guid><description>システムプラットフォームチームの id:rskmm0chang です。
+この記事は、はてなのSREが毎月交代で書いているSRE連載の2025年11月号です。10月の記事はid:cohalzさんの
+GitHub Organizationを安心して利用するための最近の機能紹介でした。
+前回も11月に書いていて、11月になるとブログが書きたくなるようです。
+developer.hatenastaff.c</description><pubDate>Thu, 27 Nov 2025 03:31:19 GMT</pubDate><category>SRE</category><category>ログ</category><category>CI-CD</category><category>パフォーマンス</category></item><item><title>GitHub Organizationを安心して利用するための最近の機能紹介</title><link>https://developer.hatenastaff.com/entry/2025/10/31/184654</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/10/31/184654</guid><description>id:cohalzです。この記事は、はてなのSREが毎月交代で書いているSRE連載の2025年10月号の記事です。9月の記事はid:s-shiroのCloudFront標準ログ(v2)をカスタマイズして便利に使う工夫でした。
+みなさん組織でGitHubを安全に使えていますか？
+こうした問いに答えるため、安全に利用するためのポリシーをはてな社内でいくつか設定していきました。今回はそのうち、最近利用で</description><pubDate>Fri, 31 Oct 2025 09:46:54 GMT</pubDate><category>SRE</category><category>ログ</category></item></channel></rss>

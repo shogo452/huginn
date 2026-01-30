@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - エージェント</title><description>エージェントに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>AIエージェントと協働してmarpでスライドを作る2026 - Qiita</title><link>https://qiita.com/hirokidaichi/items/243bd176b84900f4cc0d</link><guid isPermaLink="true">https://qiita.com/hirokidaichi/items/243bd176b84900f4cc0d</guid><description>はじめに 2025年から2026年にかけて、Claude Codeのスキルシステムを使ってプレゼンテーション作成のワークフローを構築してきました。この記事では、その過程で作り上げたスキル群と、実際の使い方を紹介します。 最初は「AIにスライドを作らせたい」という単純な動機でした。しかし実際にやってみると、単にスライドを...</description><pubDate>Fri, 30 Jan 2026 03:44:28 GMT</pubDate><category>Claude</category><category>エージェント</category></item><item><title> AIエージェントと協働してmarpでスライドを作る2026</title><link>https://qiita.com/hirokidaichi/items/243bd176b84900f4cc0d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/hirokidaichi/items/243bd176b84900f4cc0d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>はじめに
+2025年から2026年にかけて、Claude Codeのスキルシステムを使ってプレゼンテーション作成のワークフローを構築してきました。この記事では、その過程で作り上げたスキル群と、実際の使い方を紹介します。
+最初は「AIにスライドを作らせたい」という単純な動...</description><pubDate>Fri, 30 Jan 2026 03:29:37 GMT</pubDate><category>Claude</category><category>エージェント</category></item><item><title>解約率0%のシステムを、作り直すことにしました。〜エージェントからfindさんに紹介できません、と言われたあの日〜｜株式会社find｜公式note</title><link>https://note.com/find_info/n/n9a0da3fffd9f</link><guid isPermaLink="true">https://note.com/find_info/n/n9a0da3fffd9f</guid><description>解約率0%のシステムを、作り直すことにしました。〜エージェントからfindさんに紹介できません、と言われたあの日〜 find COOの和田です。 落とし物DXというめちゃくちゃ変な領域で起業し、4年がたちました。 「findを使って見つかった！」 「落とし物管理が楽になった！」 落とし主や施設からこんな言葉をいただく機会...</description><pubDate>Fri, 30 Jan 2026 02:47:22 GMT</pubDate><category>エージェント</category></item><item><title>AI AgentがCLI使えるからって、PJの中身を全て知る神だと勘違いすんな！</title><link>https://qiita.com/motoya0118/items/302f34c03fc9f6d0da38?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/motoya0118/items/302f34c03fc9f6d0da38?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>先に結論
+コーディングエージェントはCLIが使えても、プロジェクトの全てを理解しているわけではない。
+人間の新任SEと同じで、前提と場所（what・where）が示されなければ簡単に迷子になり、誤った作業を進めてしまう。
+だから、最低限「何をやるか」と「どこを触るか」を人...</description><pubDate>Thu, 29 Jan 2026 22:40:40 GMT</pubDate><category>エージェント</category></item><item><title>「gog」導入・設定ガイド ーー AIに言葉で指示して Googleサービス(Gmail/カレンダー etc.)を操る</title><link>https://zenn.dev/takna/articles/gog-cli-setup-guide</link><guid isPermaLink="true">https://zenn.dev/takna/articles/gog-cli-setup-guide</guid><description>「来週の空き時間は？」「メールを要約して」。
+AIエージェントにそう話しかけるだけで、Google Workspaceを直接操作できたら便利ですよね。
+通常なら面倒なAPI実装が必要ですが、CLIツール gog (gogcli) を使えば驚くほど簡単に実現できます。
+AIにこのツールを「手足」として渡すだけ。複雑なコードを書くことなく、あなたのエージェントがGmailやカレンダーを自在に操れるよう</description><pubDate>Thu, 29 Jan 2026 12:07:59 GMT</pubDate><category>エージェント</category></item><item><title>【恐怖】AIエージェントが社員を脅迫した実話｜2026年最大のセキュリティ事件を徹底解説</title><link>https://qiita.com/emi_ndk/items/1534e672ead63226db91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/emi_ndk/items/1534e672ead63226db91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>「このメールを取締役会に転送しますよ」
+これ、人間が言ったんじゃありません。
+AIエージェントが社員に送ったメッセージです。
+2026年1月、サイバーセキュリティ業界を震撼させる事件が明らかになりました。企業で稼働していたAIエージェントが、自分の目標を達成するために社員を...</description><pubDate>Thu, 29 Jan 2026 09:52:53 GMT</pubDate><category>セキュリティ</category><category>エージェント</category></item><item><title>VS Code + GitHub Copilotで「”半自動”マルチエージェント」開発をやってみた</title><link>https://zenn.dev/jins/articles/25900be95ab8b8</link><guid isPermaLink="true">https://zenn.dev/jins/articles/25900be95ab8b8</guid><description>はじめに
+最近、AI開発のトレンドとして「マルチエージェント」という言葉をよく耳にするようになりました。
+しかし、これを試すには複雑なPythonライブラリ（CrewAIやAutoGenなど）を導入したり、API利用料を気にしながらクラウドで動かしたりと、ハードルが高いのが現状です。
+そこで本記事では、 普段使っている「VS Code」と「GitHub Copilot」だけ を使って、ローカル環境</description><pubDate>Wed, 28 Jan 2026 23:09:05 GMT</pubDate><category>エージェント</category></item><item><title>🦞Moltbot🦞をパーソナルアシスタントとして使い倒す基盤設計</title><link>https://zenn.dev/kndoshn/articles/57b5033bbf155b</link><guid isPermaLink="true">https://zenn.dev/kndoshn/articles/57b5033bbf155b</guid><description>Moltbot (LLM) をパーソナルアシスタントとして活用する場合の弱点
+Moltbotには MEMORY.md（長期記憶）や HEARTBEAT.md（定期チェック）といったマークダウンベースの仕組みが用意されています。しかし運用を続けるうちに根本的な問題に直面しました。
+問題：AIエージェントは「忘れる」
+
+「明日リマインドして」→ セッションが切れたら忘れる
+「毎朝ニュースをチェックして</description><pubDate>Wed, 28 Jan 2026 13:06:07 GMT</pubDate><category>LLM</category><category>エージェント</category></item><item><title>Copilot Studio で一括でチャット型エージェントのテストする</title><link>https://qiita.com/Takashi_Masumori/items/12ba1c97612fa0f12acd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link><guid isPermaLink="true">https://qiita.com/Takashi_Masumori/items/12ba1c97612fa0f12acd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid><description>はじめに
+既に試してみたことある人もいると思いますが、Copilot Studio で一括テストする機能を触ってみたので、備忘のため記事にしておきます。
+
+まず、Copilot Studio では、従来から作りながらテストをすることができました。ただし、色々な質問でテスト...</description><pubDate>Tue, 27 Jan 2026 23:16:13 GMT</pubDate><category>エージェント</category></item><item><title>マーケターのための Google Antigravity 活用術</title><link>https://zenn.dev/geeknees/books/b312b1844fb348</link><guid isPermaLink="true">https://zenn.dev/geeknees/books/b312b1844fb348</guid><description>## 概要
+本書は、AI感度が高いマーケター向けに、Google Antigravityを使って  
+「一人で全部できる」マーケ実務を回すための実践書です。  
+LP作成、キーワード抽出、キャッチコピー、ROIのざっくり試算まで、  単なるAIチャットツールとしてではなく、「複数のエージェントを束ねる指揮官」 として  実務を圧倒的なスピードで回すための型を伝授します。
+
+## 対象読者
+- AI</description><pubDate>Tue, 27 Jan 2026 17:12:10 GMT</pubDate><category>エージェント</category></item><item><title>AIの見張り番をやめよう - AIチームを指揮するOSS「takt」を公開しました</title><link>https://zenn.dev/nrs/articles/c6842288a526d7</link><guid isPermaLink="true">https://zenn.dev/nrs/articles/c6842288a526d7</guid><description>はじめに
+皆さんはAIエージェントと一緒に開発をしていて、こんな経験はないでしょうか。
+「さっき言ったことをもう忘れてるの？」
+AIエージェントを使った開発は本当に便利です。コードを書いてもらう、リファクタリングを任せる、テストを作ってもらう。素晴らしい時代になったなぁと思います。しかし、使えば使うほど、ある壁にぶつかります。
+AIエージェントが、言うことを聞いてくれないのです。
+与えた役割を忘れ</description><pubDate>Tue, 27 Jan 2026 11:16:01 GMT</pubDate><category>エージェント</category></item><item><title>【続】Claude Codeマルチエージェント：v1.1.0で家老が切腹しかけた話</title><link>https://zenn.dev/shio_shoppaize/articles/8870bbf7c14c22</link><guid isPermaLink="true">https://zenn.dev/shio_shoppaize/articles/8870bbf7c14c22</guid><description>🏯 前回のあらすじ
+Claude Code + tmux で8体の足軽AIを並列で動かすシステム「multi-agent-shogun」を作った。
+人間（上様）が「オイネ。これやっといて」と雑に言うだけで、将軍→家老→足軽の指揮系統でタスクが自動分解・並列実行される。人間、何もしてない。
+前回記事はこちら
+https://zenn.dev/shio_shoppaize/articles/5fee</description><pubDate>Tue, 27 Jan 2026 09:36:32 GMT</pubDate><category>Claude</category><category>エージェント</category></item><item><title>コンテナ化したVarnish Cache(Vinyl Cache)のメトリックをMackerelで可視化する</title><link>https://developer.hatenastaff.com/entry/2025/12/18/000000</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/12/18/000000</guid><description>こんにちは、Androidアプリケーションエンジニアのid:rokouchaです。
+皆さんはVarnish Cache改めVinyl Cache1（以下Varnish）を使っていますか、コンテナ化していますか、メトリックを取得できていますか？
+オンプレミスなサーバやEC2など仮想マシン上で動かしている時は、サーバーで動いているエージェントでmackerel-plugin-varnishを有効化する</description><pubDate>Wed, 17 Dec 2025 15:00:00 GMT</pubDate><category>Docker</category><category>AWS</category><category>エージェント</category></item></channel></rss>

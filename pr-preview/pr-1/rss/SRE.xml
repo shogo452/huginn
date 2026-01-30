@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Huginn - SRE</title><description>SREに関する記事のRSSフィード</description><link>https://shogo452.github.io/</link><language>ja</language><item><title>EKS + Karpenter で GPUノードを構築した話</title><link>https://developer.hatenastaff.com/entry/2026/01/15/182143</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2026/01/15/182143</guid><description>はじめに
+id:masayosu です。
+この記事は、はてなエンジニア Advent Calendar 2025 2026年1月15日の記事であり、はてなのSREが毎月交代で書いているSRE連載の2026年1月号の記事です。
+本記事では、Amazon EKS + Karpenter を使ってGPUノードを構築した話しと、その中で フラクショナル GPU インスタンス利用時に直面した課題をまとめます</description><pubDate>Thu, 15 Jan 2026 09:21:43 GMT</pubDate><category>SRE</category><category>AWS</category></item><item><title>GitHub Actionsにおけるrunnerのパフォーマンス比較(Disk I/O編) - 2026年GitHub Actions料金改定を見据えた最適解を添えて -</title><link>https://developer.hatenastaff.com/entry/2025/12/22/123543</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/12/22/123543</guid><description>システムプラットフォームチームの id:rskmm0chang です。
+この記事は、はてなエンジニア Advent Calendar 2025の22日目の記事であり、はてなのSREが毎月交代で書いているSRE連載の2025年12月号です。
+また、下記の記事(SRE連載の2025年11月号)の続編の内容となります。
+developer.hatenastaff.com
+そのため、パフォーマンス比較を始</description><pubDate>Mon, 22 Dec 2025 03:35:43 GMT</pubDate><category>SRE</category><category>CI-CD</category><category>パフォーマンス</category></item><item><title>GitHub ActionsにおけるGitHub-hosted runnerとSelf-hosted runnerのパフォーマンス比較(CPU編)</title><link>https://developer.hatenastaff.com/entry/2025/11/27/123119</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/11/27/123119</guid><description>システムプラットフォームチームの id:rskmm0chang です。
+この記事は、はてなのSREが毎月交代で書いているSRE連載の2025年11月号です。10月の記事はid:cohalzさんの
+GitHub Organizationを安心して利用するための最近の機能紹介でした。
+前回も11月に書いていて、11月になるとブログが書きたくなるようです。
+developer.hatenastaff.c</description><pubDate>Thu, 27 Nov 2025 03:31:19 GMT</pubDate><category>SRE</category><category>ログ</category><category>CI-CD</category><category>パフォーマンス</category></item><item><title>GitHub Organizationを安心して利用するための最近の機能紹介</title><link>https://developer.hatenastaff.com/entry/2025/10/31/184654</link><guid isPermaLink="true">https://developer.hatenastaff.com/entry/2025/10/31/184654</guid><description>id:cohalzです。この記事は、はてなのSREが毎月交代で書いているSRE連載の2025年10月号の記事です。9月の記事はid:s-shiroのCloudFront標準ログ(v2)をカスタマイズして便利に使う工夫でした。
+みなさん組織でGitHubを安全に使えていますか？
+こうした問いに答えるため、安全に利用するためのポリシーをはてな社内でいくつか設定していきました。今回はそのうち、最近利用で</description><pubDate>Fri, 31 Oct 2025 09:46:54 GMT</pubDate><category>SRE</category><category>ログ</category></item></channel></rss>

@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Huginnの設定画面。RSSフィード、キーワード、表示オプションをカスタマイズできます。"><meta name="robots" content="index, follow"><!-- Canonical URL --><link rel="canonical" href="https://shogo452.github.io/huginn/config/"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://shogo452.github.io/huginn/config/"><meta property="og:title" content="設定 - Huginn"><meta property="og:description" content="Huginnの設定画面。RSSフィード、キーワード、表示オプションをカスタマイズできます。"><meta property="og:image" content="https://shogo452.github.io/huginn/og-image.png"><meta property="og:locale" content="ja_JP"><meta property="og:site_name" content="Huginn"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://shogo452.github.io/huginn/config/"><meta name="twitter:title" content="設定 - Huginn"><meta name="twitter:description" content="Huginnの設定画面。RSSフィード、キーワード、表示オプションをカスタマイズできます。"><meta name="twitter:image" content="https://shogo452.github.io/huginn/og-image.png"><!-- JSON-LD Structured Data --><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Huginn","description":"技術記事を集約するRSSフィードリーダー","url":"https://shogo452.github.io/huginn/","publisher":{"@type":"Person","name":"shogo452"}}</script><!-- PWA Meta Tags --><meta name="theme-color" content="#0F172A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Huginn"><!-- Icons --><link rel="icon" type="image/svg+xml" href="/huginn/icons/icon.svg"><link rel="apple-touch-icon" href="/huginn/icons/icon-192.png"><!-- PWA Manifest --><link rel="manifest" href="/huginn/manifest.json"><!-- Google Fonts - Noto Sans JP --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet"><title>設定 - Huginn</title><script>
+      (function() {
+        const saved = localStorage.getItem('huginn-theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved || (prefersDark ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script><link rel="stylesheet" href="/huginn/_astro/index.DbAN3xuI.css"></head> <body class="font-sans bg-background text-foreground min-h-screen pt-14"> <!-- Desktop Header --> <header class="fixed top-0 left-0 right-0 h-14 bg-background border-b border-border flex items-center justify-between px-12 z-50 max-lg:hidden"> <a href="/huginn/" class="flex items-baseline gap-1.5"> <span class="text-xl font-bold text-foreground">Huginn</span> <span class="text-[10px] text-muted-foreground">RSS</span> </a> <nav class="flex items-center gap-8"> <a href="/huginn/" class="text-sm transition-colors hover:text-foreground text-muted-foreground">
+Articles
+</a> <a href="/huginn/tags/" class="text-sm transition-colors hover:text-foreground text-muted-foreground">
+Tags
+</a> <a href="/huginn/feeds/" class="text-sm transition-colors hover:text-foreground text-muted-foreground">
+Feeds
+</a> <a href="/huginn/keywords/" class="text-sm transition-colors hover:text-foreground text-muted-foreground">
+Keywords
+</a> <a href="/huginn/config/" class="text-sm transition-colors hover:text-foreground text-foreground font-medium">
+Config
+</a> <div class="flex items-center gap-1"> <a href="https://github.com/shogo452/huginn" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub"> <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"> <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path> </svg> </a> <button class="theme-toggle flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted text-muted-foreground hover:text-foreground transition-colors" id="theme-toggle" aria-label="テーマ切り替え"> <svg class="icon-sun hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> <svg class="icon-moon block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </div> </nav> </header> <!-- Mobile Header --> <header class="lg:hidden fixed top-0 left-0 right-0 h-14 bg-background border-b border-border flex items-center justify-between px-4 z-50"> <a href="/huginn/" class="flex items-baseline gap-1.5"> <span class="text-xl font-bold text-foreground">Huginn</span> <span class="text-[10px] text-muted-foreground">RSS</span> </a> <div class="flex items-center gap-1"> <a href="https://github.com/shogo452/huginn" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub"> <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"> <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path> </svg> </a> <button class="flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted text-muted-foreground hover:text-foreground transition-colors" id="mobile-theme-toggle" aria-label="テーマ切り替え"> <svg class="icon-sun hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> <svg class="icon-moon block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </div> </header>  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="2nV678" prefix="r1" component-url="/huginn/_astro/ConfigEditor.COnEM39r.js" component-export="ConfigEditor" renderer-url="/huginn/_astro/client.CTd2fbS1.js" props="{&quot;initialKeywords&quot;:[0,{&quot;keywords&quot;:[1,[[0,{&quot;name&quot;:[0,&quot;SRE&quot;],&quot;aliases&quot;:[1,[[0,&quot;Site Reliability Engineering&quot;],[0,&quot;サイト信頼性エンジニアリング&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;Kubernetes&quot;],&quot;aliases&quot;:[1,[[0,&quot;K8s&quot;],[0,&quot;k8s&quot;],[0,&quot;クバネテス&quot;],[0,&quot;クーベネティス&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;Docker&quot;],&quot;aliases&quot;:[1,[[0,&quot;コンテナ&quot;],[0,&quot;container&quot;],[0,&quot;Dockerfile&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;Terraform&quot;],&quot;aliases&quot;:[1,[[0,&quot;IaC&quot;],[0,&quot;Infrastructure as Code&quot;],[0,&quot;HCL&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;AWS&quot;],&quot;aliases&quot;:[1,[[0,&quot;Amazon Web Services&quot;],[0,&quot;Lambda&quot;],[0,&quot;S3&quot;],[0,&quot;EC2&quot;],[0,&quot;ECS&quot;],[0,&quot;EKS&quot;],[0,&quot;CloudFormation&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;GCP&quot;],&quot;aliases&quot;:[1,[[0,&quot;Google Cloud&quot;],[0,&quot;Cloud Run&quot;],[0,&quot;GKE&quot;],[0,&quot;BigQuery&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;Azure&quot;],&quot;aliases&quot;:[1,[[0,&quot;Microsoft Azure&quot;],[0,&quot;AKS&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;監視&quot;],&quot;aliases&quot;:[1,[[0,&quot;Monitoring&quot;],[0,&quot;Observability&quot;],[0,&quot;可観測性&quot;],[0,&quot;Prometheus&quot;],[0,&quot;Grafana&quot;],[0,&quot;Datadog&quot;],[0,&quot;New Relic&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;ログ&quot;],&quot;aliases&quot;:[1,[[0,&quot;Logging&quot;],[0,&quot;Fluentd&quot;],[0,&quot;Fluent Bit&quot;],[0,&quot;Elasticsearch&quot;],[0,&quot;Loki&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;CI-CD&quot;],&quot;aliases&quot;:[1,[[0,&quot;CI/CD&quot;],[0,&quot;GitHub Actions&quot;],[0,&quot;CircleCI&quot;],[0,&quot;Jenkins&quot;],[0,&quot;ArgoCD&quot;],[0,&quot;GitOps&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;ネットワーク&quot;],&quot;aliases&quot;:[1,[[0,&quot;Network&quot;],[0,&quot;DNS&quot;],[0,&quot;CDN&quot;],[0,&quot;ロードバランサー&quot;],[0,&quot;Load Balancer&quot;],[0,&quot;Nginx&quot;],[0,&quot;Envoy&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;セキュリティ&quot;],&quot;aliases&quot;:[1,[[0,&quot;Security&quot;],[0,&quot;脆弱性&quot;],[0,&quot;認証&quot;],[0,&quot;OWASP&quot;],[0,&quot;ゼロトラスト&quot;],[0,&quot;Zero Trust&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;障害対応&quot;],&quot;aliases&quot;:[1,[[0,&quot;インシデント&quot;],[0,&quot;Incident&quot;],[0,&quot;ポストモーテム&quot;],[0,&quot;Postmortem&quot;],[0,&quot;オンコール&quot;],[0,&quot;On-call&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;パフォーマンス&quot;],&quot;aliases&quot;:[1,[[0,&quot;Performance&quot;],[0,&quot;最適化&quot;],[0,&quot;高速化&quot;],[0,&quot;レイテンシ&quot;],[0,&quot;Latency&quot;],[0,&quot;スループット&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;スケーラビリティ&quot;],&quot;aliases&quot;:[1,[[0,&quot;Scalability&quot;],[0,&quot;オートスケール&quot;],[0,&quot;Auto Scaling&quot;],[0,&quot;負荷分散&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;データベース&quot;],&quot;aliases&quot;:[1,[[0,&quot;DB&quot;],[0,&quot;MySQL&quot;],[0,&quot;PostgreSQL&quot;],[0,&quot;MongoDB&quot;],[0,&quot;Redis&quot;],[0,&quot;DynamoDB&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;Linux&quot;],&quot;aliases&quot;:[1,[[0,&quot;Ubuntu&quot;],[0,&quot;CentOS&quot;],[0,&quot;RHEL&quot;],[0,&quot;カーネル&quot;],[0,&quot;kernel&quot;],[0,&quot;systemd&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;LLM&quot;],&quot;aliases&quot;:[1,[[0,&quot;大規模言語モデル&quot;],[0,&quot;Large Language Model&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;生成AI&quot;],&quot;aliases&quot;:[1,[[0,&quot;Generative AI&quot;],[0,&quot;GenAI&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;ChatGPT&quot;],&quot;aliases&quot;:[1,[[0,&quot;GPT-4&quot;],[0,&quot;GPT-4o&quot;],[0,&quot;OpenAI&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;Claude&quot;],&quot;aliases&quot;:[1,[[0,&quot;Anthropic&quot;],[0,&quot;Claude 3&quot;],[0,&quot;Claude 4&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;Gemini&quot;],&quot;aliases&quot;:[1,[[0,&quot;Google AI&quot;],[0,&quot;Bard&quot;],[0,&quot;Gemini Pro&quot;],[0,&quot;Gemini Ultra&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;プロンプト&quot;],&quot;aliases&quot;:[1,[[0,&quot;Prompt&quot;],[0,&quot;プロンプトエンジニアリング&quot;],[0,&quot;Prompt Engineering&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;RAG&quot;],&quot;aliases&quot;:[1,[[0,&quot;Retrieval Augmented Generation&quot;],[0,&quot;検索拡張生成&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;ファインチューニング&quot;],&quot;aliases&quot;:[1,[[0,&quot;Fine-tuning&quot;],[0,&quot;LoRA&quot;],[0,&quot;QLoRA&quot;],[0,&quot;PEFT&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;埋め込み&quot;],&quot;aliases&quot;:[1,[[0,&quot;Embedding&quot;],[0,&quot;ベクトル検索&quot;],[0,&quot;Vector Search&quot;],[0,&quot;ベクトルDB&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;エージェント&quot;],&quot;aliases&quot;:[1,[[0,&quot;AI Agent&quot;],[0,&quot;AIエージェント&quot;],[0,&quot;LangChain&quot;],[0,&quot;LlamaIndex&quot;],[0,&quot;AutoGPT&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;ローカルLLM&quot;],&quot;aliases&quot;:[1,[[0,&quot;Local LLM&quot;],[0,&quot;Ollama&quot;],[0,&quot;llama.cpp&quot;],[0,&quot;vLLM&quot;],[0,&quot;Llama&quot;],[0,&quot;Mistral&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;マルチモーダル&quot;],&quot;aliases&quot;:[1,[[0,&quot;Multimodal&quot;],[0,&quot;Vision&quot;],[0,&quot;画像生成&quot;],[0,&quot;Stable Diffusion&quot;],[0,&quot;DALL-E&quot;],[0,&quot;Midjourney&quot;]]]}],[0,{&quot;name&quot;:[0,&quot;MCP&quot;],&quot;aliases&quot;:[1,[[0,&quot;Model Context Protocol&quot;]]]}]]]}],&quot;initialFeeds&quot;:[0,{&quot;feeds&quot;:[1,[[0,{&quot;name&quot;:[0,&quot;Zenn&quot;],&quot;url&quot;:[0,&quot;https://zenn.dev/feed&quot;],&quot;siteUrl&quot;:[0,&quot;https://zenn.dev&quot;]}],[0,{&quot;name&quot;:[0,&quot;Qiita&quot;],&quot;url&quot;:[0,&quot;https://qiita.com/popular-items/feed&quot;],&quot;siteUrl&quot;:[0,&quot;https://qiita.com&quot;]}],[0,{&quot;name&quot;:[0,&quot;Hatena Developer Blog&quot;],&quot;url&quot;:[0,&quot;https://developer.hatenastaff.com/feed&quot;],&quot;siteUrl&quot;:[0,&quot;https://developer.hatenastaff.com&quot;]}],[0,{&quot;name&quot;:[0,&quot;はてなブックマーク&quot;],&quot;url&quot;:[0,&quot;https://b.hatena.ne.jp/hotentry/it.rss&quot;],&quot;siteUrl&quot;:[0,&quot;https://b.hatena.ne.jp/hotentry/it&quot;]}]]]}]}" ssr client="load" opts="{&quot;name&quot;:&quot;ConfigEditor&quot;,&quot;value&quot;:true}" await-children><main class="p-6 lg:p-8 lg:pt-8 max-w-4xl mx-auto"><div class="flex flex-col gap-2 mb-8"><h1 class="text-3xl lg:text-4xl font-normal tracking-tight text-foreground">Configuration</h1><p class="text-sm text-muted-foreground">Edit and copy JSON configuration files</p></div><div class="flex flex-col gap-8"><div class="flex flex-col gap-3"><div class="flex items-center justify-between"><div class="flex items-center gap-3"><h2 class="text-lg font-medium text-foreground">keywords.json</h2></div><div class="flex items-center gap-2"><button data-slot="button" data-variant="outline" data-size="sm" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5">Format</button><button data-slot="button" data-variant="outline" data-size="sm" class="justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md px-3 has-[&gt;svg]:px-2.5 flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy w-3.5 h-3.5" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>Copy</button></div></div><textarea class="w-full h-[400px] p-4 font-mono text-sm bg-muted border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-ring border-border" spellCheck="false">{
+  &quot;keywords&quot;: [
+    {
+      &quot;name&quot;: &quot;SRE&quot;,
+      &quot;aliases&quot;: [
+        &quot;Site Reliability Engineering&quot;,
+        &quot;サイト信頼性エンジニアリング&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Kubernetes&quot;,
+      &quot;aliases&quot;: [
+        &quot;K8s&quot;,
+        &quot;k8s&quot;,
+        &quot;クバネテス&quot;,
+        &quot;クーベネティス&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Docker&quot;,
+      &quot;aliases&quot;: [
+        &quot;コンテナ&quot;,
+        &quot;container&quot;,
+        &quot;Dockerfile&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Terraform&quot;,
+      &quot;aliases&quot;: [
+        &quot;IaC&quot;,
+        &quot;Infrastructure as Code&quot;,
+        &quot;HCL&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;AWS&quot;,
+      &quot;aliases&quot;: [
+        &quot;Amazon Web Services&quot;,
+        &quot;Lambda&quot;,
+        &quot;S3&quot;,
+        &quot;EC2&quot;,
+        &quot;ECS&quot;,
+        &quot;EKS&quot;,
+        &quot;CloudFormation&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;GCP&quot;,
+      &quot;aliases&quot;: [
+        &quot;Google Cloud&quot;,
+        &quot;Cloud Run&quot;,
+        &quot;GKE&quot;,
+        &quot;BigQuery&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Azure&quot;,
+      &quot;aliases&quot;: [
+        &quot;Microsoft Azure&quot;,
+        &quot;AKS&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;監視&quot;,
+      &quot;aliases&quot;: [
+        &quot;Monitoring&quot;,
+        &quot;Observability&quot;,
+        &quot;可観測性&quot;,
+        &quot;Prometheus&quot;,
+        &quot;Grafana&quot;,
+        &quot;Datadog&quot;,
+        &quot;New Relic&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;ログ&quot;,
+      &quot;aliases&quot;: [
+        &quot;Logging&quot;,
+        &quot;Fluentd&quot;,
+        &quot;Fluent Bit&quot;,
+        &quot;Elasticsearch&quot;,
+        &quot;Loki&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;CI-CD&quot;,
+      &quot;aliases&quot;: [
+        &quot;CI/CD&quot;,
+        &quot;GitHub Actions&quot;,
+        &quot;CircleCI&quot;,
+        &quot;Jenkins&quot;,
+        &quot;ArgoCD&quot;,
+        &quot;GitOps&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;ネットワーク&quot;,
+      &quot;aliases&quot;: [
+        &quot;Network&quot;,
+        &quot;DNS&quot;,
+        &quot;CDN&quot;,
+        &quot;ロードバランサー&quot;,
+        &quot;Load Balancer&quot;,
+        &quot;Nginx&quot;,
+        &quot;Envoy&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;セキュリティ&quot;,
+      &quot;aliases&quot;: [
+        &quot;Security&quot;,
+        &quot;脆弱性&quot;,
+        &quot;認証&quot;,
+        &quot;OWASP&quot;,
+        &quot;ゼロトラスト&quot;,
+        &quot;Zero Trust&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;障害対応&quot;,
+      &quot;aliases&quot;: [
+        &quot;インシデント&quot;,
+        &quot;Incident&quot;,
+        &quot;ポストモーテム&quot;,
+        &quot;Postmortem&quot;,
+        &quot;オンコール&quot;,
+        &quot;On-call&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;パフォーマンス&quot;,
+      &quot;aliases&quot;: [
+        &quot;Performance&quot;,
+        &quot;最適化&quot;,
+        &quot;高速化&quot;,
+        &quot;レイテンシ&quot;,
+        &quot;Latency&quot;,
+        &quot;スループット&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;スケーラビリティ&quot;,
+      &quot;aliases&quot;: [
+        &quot;Scalability&quot;,
+        &quot;オートスケール&quot;,
+        &quot;Auto Scaling&quot;,
+        &quot;負荷分散&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;データベース&quot;,
+      &quot;aliases&quot;: [
+        &quot;DB&quot;,
+        &quot;MySQL&quot;,
+        &quot;PostgreSQL&quot;,
+        &quot;MongoDB&quot;,
+        &quot;Redis&quot;,
+        &quot;DynamoDB&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Linux&quot;,
+      &quot;aliases&quot;: [
+        &quot;Ubuntu&quot;,
+        &quot;CentOS&quot;,
+        &quot;RHEL&quot;,
+        &quot;カーネル&quot;,
+        &quot;kernel&quot;,
+        &quot;systemd&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;LLM&quot;,
+      &quot;aliases&quot;: [
+        &quot;大規模言語モデル&quot;,
+        &quot;Large Language Model&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;生成AI&quot;,
+      &quot;aliases&quot;: [
+        &quot;Generative AI&quot;,
+        &quot;GenAI&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;ChatGPT&quot;,
+      &quot;aliases&quot;: [
+        &quot;GPT-4&quot;,
+        &quot;GPT-4o&quot;,
+        &quot;OpenAI&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Claude&quot;,
+      &quot;aliases&quot;: [
+        &quot;Anthropic&quot;,
+        &quot;Claude 3&quot;,
+        &quot;Claude 4&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Gemini&quot;,
+      &quot;aliases&quot;: [
+        &quot;Google AI&quot;,
+        &quot;Bard&quot;,
+        &quot;Gemini Pro&quot;,
+        &quot;Gemini Ultra&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;プロンプト&quot;,
+      &quot;aliases&quot;: [
+        &quot;Prompt&quot;,
+        &quot;プロンプトエンジニアリング&quot;,
+        &quot;Prompt Engineering&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;RAG&quot;,
+      &quot;aliases&quot;: [
+        &quot;Retrieval Augmented Generation&quot;,
+        &quot;検索拡張生成&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;ファインチューニング&quot;,
+      &quot;aliases&quot;: [
+        &quot;Fine-tuning&quot;,
+        &quot;LoRA&quot;,
+        &quot;QLoRA&quot;,
+        &quot;PEFT&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;埋め込み&quot;,
+      &quot;aliases&quot;: [
+        &quot;Embedding&quot;,
+        &quot;ベクトル検索&quot;,
+        &quot;Vector Search&quot;,
+        &quot;ベクトルDB&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;エージェント&quot;,
+      &quot;aliases&quot;: [
+        &quot;AI Agent&quot;,
+        &quot;AIエージェント&quot;,
+        &quot;LangChain&quot;,
+        &quot;LlamaIndex&quot;,
+        &quot;AutoGPT&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;ローカルLLM&quot;,
+      &quot;aliases&quot;: [
+        &quot;Local LLM&quot;,
+        &quot;Ollama&quot;,
+        &quot;llama.cpp&quot;,
+        &quot;vLLM&quot;,
+        &quot;Llama&quot;,
+        &quot;Mistral&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;マルチモーダル&quot;,
+      &quot;aliases&quot;: [
+        &quot;Multimodal&quot;,
+        &quot;Vision&quot;,
+        &quot;画像生成&quot;,
+        &quot;Stable Diffusion&quot;,
+        &quot;DALL-E&quot;,
+        &quot;Midjourney&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;MCP&quot;,
+      &quot;aliases&quot;: [
+        &quot;Model Context Protocol&quot;
+      ]
+    }
+  ]
+}</textarea></div><div class="flex flex-col gap-3"><div class="flex items-center justify-between"><div class="flex items-center gap-3"><h2 class="text-lg font-medium text-foreground">feeds.json</h2></div><div class="flex items-center gap-2"><button data-slot="button" data-variant="outline" data-size="sm" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5">Format</button><button data-slot="button" data-variant="outline" data-size="sm" class="justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md px-3 has-[&gt;svg]:px-2.5 flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy w-3.5 h-3.5" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>Copy</button></div></div><textarea class="w-full h-[300px] p-4 font-mono text-sm bg-muted border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-ring border-border" spellCheck="false">{
+  &quot;feeds&quot;: [
+    {
+      &quot;name&quot;: &quot;Zenn&quot;,
+      &quot;url&quot;: &quot;https://zenn.dev/feed&quot;,
+      &quot;siteUrl&quot;: &quot;https://zenn.dev&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Qiita&quot;,
+      &quot;url&quot;: &quot;https://qiita.com/popular-items/feed&quot;,
+      &quot;siteUrl&quot;: &quot;https://qiita.com&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Hatena Developer Blog&quot;,
+      &quot;url&quot;: &quot;https://developer.hatenastaff.com/feed&quot;,
+      &quot;siteUrl&quot;: &quot;https://developer.hatenastaff.com&quot;
+    },
+    {
+      &quot;name&quot;: &quot;はてなブックマーク&quot;,
+      &quot;url&quot;: &quot;https://b.hatena.ne.jp/hotentry/it.rss&quot;,
+      &quot;siteUrl&quot;: &quot;https://b.hatena.ne.jp/hotentry/it&quot;
+    }
+  ]
+}</textarea></div></div></main><!--astro:end--></astro-island>  <!-- Mobile Bottom Navigation --> <nav class="lg:hidden fixed bottom-0 left-0 right-0 h-14 bg-background border-t border-border flex justify-around items-center z-50"> <a href="/huginn/" class="flex flex-col items-center gap-0.5 text-[10px] p-2 text-muted-foreground"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path> <path d="M18 14h-8"></path> <path d="M15 18h-5"></path> <path d="M10 6h8v4h-8V6Z"></path> </svg> <span>Articles</span> </a> <a href="/huginn/tags/" class="flex flex-col items-center gap-0.5 text-[10px] p-2 text-muted-foreground"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path> <path d="M7 7h.01"></path> </svg> <span>Tags</span> </a> <a href="/huginn/feeds/" class="flex flex-col items-center gap-0.5 text-[10px] p-2 text-muted-foreground"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M4 11a9 9 0 0 1 9 9"></path> <path d="M4 4a16 16 0 0 1 16 16"></path> <circle cx="5" cy="19" r="1"></circle> </svg> <span>Feeds</span> </a> <a href="/huginn/keywords/" class="flex flex-col items-center gap-0.5 text-[10px] p-2 text-muted-foreground"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path> <path d="M9 18h6"></path> <path d="M10 22h4"></path> </svg> <span>Keywords</span> </a> <a href="/huginn/config/" class="flex flex-col items-center gap-0.5 text-[10px] p-2 text-foreground font-semibold"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path> <circle cx="12" cy="12" r="3"></circle> </svg> <span>Settings</span> </a> </nav> <script type="module">function n(){const e=document.documentElement.classList.contains("dark");document.documentElement.classList.toggle("dark",!e),localStorage.setItem("huginn-theme",e?"light":"dark")}document.getElementById("theme-toggle")?.addEventListener("click",n);document.getElementById("mobile-theme-toggle")?.addEventListener("click",n);window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{localStorage.getItem("huginn-theme")||document.documentElement.classList.toggle("dark",e.matches)});"serviceWorker"in navigator&&window.addEventListener("load",()=>{const e=document.querySelector('link[rel="manifest"]')?.href?.replace("manifest.json","")||"/huginn/";navigator.serviceWorker.register(e+"sw.js").then(t=>console.log("SW registered:",t.scope)).catch(t=>console.log("SW registration failed:",t))});</script>  </body> </html>

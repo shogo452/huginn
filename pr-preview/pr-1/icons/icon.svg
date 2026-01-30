@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#grad)"/>
+  <g fill="white">
+    <!-- Raven/Bird silhouette representing Huginn (Odin's raven) -->
+    <path d="M256 100c-86 0-156 70-156 156s70 156 156 156 156-70 156-156-70-156-156-156zm0 280c-68.4 0-124-55.6-124-124s55.6-124 124-124 124 55.6 124 124-55.6 124-124 124z" opacity="0.3"/>
+    <!-- RSS icon stylized -->
+    <circle cx="180" cy="332" r="28"/>
+    <path d="M152 196c88.4 0 160 71.6 160 160h-48c0-61.9-50.1-112-112-112v-48z"/>
+    <path d="M152 260c53 0 96 43 96 96h-48c0-26.5-21.5-48-48-48v-48z"/>
+    <!-- H letter for Huginn -->
+    <text x="280" y="240" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="white">H</text>
+  </g>
+</svg>
