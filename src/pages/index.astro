@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { fetchAllFeeds, getFeedSources } from "../lib/feed-fetcher";
+import { ArticleList } from "../components/ArticleList";
+
+const feeds = await fetchAllFeeds();
+const sources = getFeedSources();
+
+// ArticleListコンポーネント用にデータを変換
+const articles = feeds.map((item) => ({
+  title: item.title,
+  content: item.content,
+  link: item.link,
+  pubDate: item.pubDate,
+  pubDateFormatted: item.pubDateFormatted,
+  sourceName: item.sourceName,
+  sourceUrl: item.sourceUrl,
+  tags: item.tags,
+  thumbnail: item.thumbnail,
+  bookmarkCount: item.bookmarkCount,
+}));
+
+const sourcesData = sources.map((s) => ({
+  name: s.name,
+  url: s.url,
+  siteUrl: s.siteUrl,
+}));
+---
+
+<Layout title="Huginn - Tech RSS Reader" description="技術記事を集約するRSSフィードリーダー。AI自動タグ付け、キーボードショートカット対応。" currentPage="articles">
+  <ArticleList
+    client:load
+    articles={articles}
+    sources={sourcesData}
+  />
+</Layout>
+
+<style is:global>
+  /* Ensure the article list takes full height */
+  .page-layout {
+    min-height: calc(100vh - 56px);
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .page-layout {
+      min-height: calc(100vh - 112px);
+    }
+  }
+</style>

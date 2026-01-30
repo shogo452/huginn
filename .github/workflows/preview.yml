@@ -1,0 +1,43 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        if: github.event.action != 'closed'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        if: github.event.action != 'closed'
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        if: github.event.action != 'closed'
+        run: npm ci
+
+      - name: Build
+        if: github.event.action != 'closed'
+        run: npm run build
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./dist
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          action: auto

@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getFeedSources } from "../../lib/feed-fetcher";
+import { FeedList } from "../../components/FeedList";
+
+const sources = getFeedSources().map((s) => ({
+  name: s.name,
+  url: s.url,
+  siteUrl: s.siteUrl,
+}));
+---
+
+<Layout title="Feeds - Huginn" description="購読中のRSSフィード一覧。技術メディアの記事を集約しています。" currentPage="feeds">
+  <FeedList client:load sources={sources} />
+</Layout>

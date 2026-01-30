@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { fetchAllFeeds } from "../../lib/feed-fetcher";
+import { TagShow } from "../../components/TagShow";
+
+export async function getStaticPaths() {
+  const feeds = await fetchAllFeeds();
+
+  // 全タグを収集
+  const tagSet = new Set<string>();
+  for (const item of feeds) {
+    for (const tag of item.tags) {
+      tagSet.add(tag);
+    }
+  }
+
+  // 各タグのページを生成
+  return [...tagSet].map((tag) => ({
+    params: { tag },
+    props: { tag },
+  }));
+}
+
+interface Props {
+  tag: string;
+}
+
+const { tag } = Astro.props;
+const feeds = await fetchAllFeeds();
+
+// このタグを持つ記事をフィルタ
+const filteredFeeds = feeds
+  .filter((item) => item.tags.includes(tag))
+  .map((item) => ({
+    title: item.title,
+    content: item.content,
+    link: item.link,
+    pubDate: item.pubDate,
+    pubDateFormatted: item.pubDateFormatted,
+    sourceName: item.sourceName,
+    sourceUrl: item.sourceUrl,
+    tags: item.tags,
+    thumbnail: item.thumbnail,
+    bookmarkCount: item.bookmarkCount,
+  }));
+
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<Layout title={`${tag}の記事一覧 - Huginn`} description={`${tag}に関する最新の技術記事一覧。${filteredFeeds.length}件の記事があります。`} currentPage="tags">
+  <TagShow client:load tag={tag} articles={filteredFeeds} baseUrl={baseUrl} />
+</Layout>

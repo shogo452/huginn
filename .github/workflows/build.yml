@@ -1,0 +1,51 @@
+name: Build and Deploy
+
+on:
+  # 手動トリガー
+  workflow_dispatch:
+  # 定期実行 (毎時0分)
+  # schedule:
+  #   - cron: "0 * * * *"
+  # mainブランチへのpush
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Restore tag cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: tag-cache-${{ github.run_id }}
+          restore-keys: |
+            tag-cache-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: true
+          exclude_assets: ""

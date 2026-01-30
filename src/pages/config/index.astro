@@ -1,0 +1,10 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { ConfigEditor } from "../../components/ConfigEditor";
+import keywordsData from "../../data/keywords.json";
+import feedsData from "../../data/feeds.json";
+---
+
+<Layout title="設定 - Huginn" description="Huginnの設定画面。RSSフィード、キーワード、表示オプションをカスタマイズできます。" currentPage="settings">
+  <ConfigEditor client:load initialKeywords={keywordsData} initialFeeds={feedsData} />
+</Layout>

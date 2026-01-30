@@ -1,0 +1,24 @@
+{
+  "feeds": [
+    {
+      "name": "Zenn",
+      "url": "https://zenn.dev/feed",
+      "siteUrl": "https://zenn.dev"
+    },
+    {
+      "name": "Qiita",
+      "url": "https://qiita.com/popular-items/feed",
+      "siteUrl": "https://qiita.com"
+    },
+    {
+      "name": "Hatena Developer Blog",
+      "url": "https://developer.hatenastaff.com/feed",
+      "siteUrl": "https://developer.hatenastaff.com"
+    },
+    {
+      "name": "はてなブックマーク",
+      "url": "https://b.hatena.ne.jp/hotentry/it.rss",
+      "siteUrl": "https://b.hatena.ne.jp/hotentry/it"
+    }
+  ]
+}
